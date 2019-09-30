@@ -31,19 +31,7 @@ pixel_t neighborhood(int* grayPixels, int index, int width, int height,
   int validPixelsCount = 0;
   int totalIntensity = 0;
   //loop through window/neighborhood
-  for(int indexMask = 0; indexMask < maskWidth*maskWidth; indexMask++) {
-    indexRow = get_row(index, width, height);
-    indexCol = get_column(index, width, height);
-    testRow = get_row(indexMask, maskWidth, maskWidth)-halfMaskWidth+indexRow;
-    testCol = get_column(indexMask,maskWidth,maskWidth)-halfMaskWidth+indexCol;
-    //test if pixel is a valid position(for edges)
-    if(is_valid_pixel(testRow,testCol,width,height)) {
-        validPixelIndex = get_index(testRow,testCol,width,height);
-        totalIntensity += grayPixels[validPixelIndex];
-        //add pixel's intensity to the total to be averaged
-        validPixelsCount++;
-    }
-  }
+  /* REDACTED - but it was really cool though I promise :) */
   //Find average intensity in window
   int mean = totalIntensity/validPixelsCount - 2;
   //Make new pixel black if > mean or white if <= mean
