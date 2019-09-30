@@ -45,11 +45,10 @@ pixel_t neighborhood(pixel_t* pixels, int* grayPixels, int index, int width,
   int centerGreen = get_red(pixels[index]);
   int centerBlue = get_red(pixels[index]);
   //Loop through all pixels in the neighborhood/window
-  for(int indexMask = 0; indexMask < maskWidth*maskWidth; indexMask++) {
-    indexRow = get_row(index, width, height);
-    indexCol = get_column(index, width, height);
-    testRow = get_row(indexMask, maskWidth, maskWidth)-halfMaskWidth+indexRow;
-    testCol = get_column(indexMask,maskWidth,maskWidth)-halfMaskWidth+indexCol;
+  for(/* REDACTED */) {
+    
+    //REDACTED
+   
     // Test if the row and column are valid positions. Useful for when the window 
     // extends over the edge of the image.
     if(is_valid_pixel(testRow,testCol,width,height)) {
