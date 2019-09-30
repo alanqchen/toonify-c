@@ -9,7 +9,7 @@
  * 
  * Requires Magick++ 32 Bit
  * 
- * To complile, copy-paste the following:
+ * To complile, use the makefile or copy-paste the following:
  * g++ `Magick++-config --cxxflags --cppflags` -o toonify pixel.h 
  *     pixel.cpp imageutil.h imageutil.cpp bilateral.h bilateral.cpp 
  *     mergesort.h mergesort.cpp median.h median.cpp adaptivethreshold.h 
@@ -103,7 +103,7 @@ int main(int argc, char **argv) {
     bool advancedMode = false;
     string destination; //store destination
     int brightness;
-		/* The Prompts Themselves */
+    /* The Prompts Themselves */
     cout << "Enter Advanced Mode(y/n)?";
     cin >> input;
     if(input == "y" || input == "Y" || input == "yes" || input == "Yes") 
