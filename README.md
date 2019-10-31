@@ -1,4 +1,4 @@
-# toonify-c
+# toonify-cpp
 c++ implementation of a cartoon filter
 
 Dependency: This requires Magick++ 32 bit
